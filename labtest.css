@@ -1,0 +1,128 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 16px;
+    bottom: 0%;
+    text-align: center;
+}
+
+iframe {
+    margin: 5px;
+    height: 630px;
+    width: 99%;
+    border: none;
+}
+
+#section1 {
+    width: 90%;
+    height: 80%;
+    border: none;
+    position: absolute;
+    top: 5%;
+    margin-top: 10px;
+    margin-left: 5%;
+    overflow-y: auto;
+    box-shadow: 0 5px 10px 0 gray, 0 5px 10px 0 gray;
+
+}
+
+#labpagecontent {
+    margin-top: 30px;
+}
+
+#section2 {
+    margin-top: 530px;
+    margin-left: 200px;
+    float: left;
+}
+
+aside {
+    margin: 0%;
+    width: 50%;
+    height: 100%;
+    float: right;
+    position: sticky;
+    top: 0%;
+}
+
+aside img {
+    width: 100%;
+    height: 100%;
+}
+
+.labtest-fields {
+    min-width: 300px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+    width: 20%;
+    border: none;
+    padding: 5px;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    height: 30px;
+}
+
+.buttns {
+    margin-left: 200px;
+}
+
+.buttns button {
+    display: inline-block;
+    margin: 20px;
+    width: 80px;
+    border-radius: 4px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    bottom: 50%;
+    border: none;
+    background-color: rgb(175, 102, 243);
+    cursor: pointer;
+}
+
+input,
+label,
+p,
+#district-name {
+    font-size: 16px;
+}
+
+p {
+    font-weight: bold;
+}
+
+#district-name {
+    height: 40px;
+}
+
+input[name^="option"] {
+    width: 20px;
+    height: 20px;
+}

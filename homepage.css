@@ -1,0 +1,292 @@
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.685);
+    width: 100%;
+
+}
+
+#navigationbar {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    width: 100%;
+
+}
+
+.menubar {
+    margin: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.menubar li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menubar li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menubar li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menubar li:nth-child(2):hover #dropdown1,
+.menubar li:nth-child(3):hover #dropdown2 {
+    display: block;
+    float: right;
+    margin-right: 10px;
+    font-size: medium;
+}
+
+#dropdown1,
+#dropdown2 {
+    width: auto;
+    max-width: 150px;
+    display: none;
+    background-color: whitesmoke;
+    padding: 0%;
+    position: absolute;
+    top: 43px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#dropdown1 li,
+#dropdown2 li {
+    background-color: whitesmoke;
+    margin: 0px;
+}
+
+#dropdown1 li a,
+#dropdown2 li a {
+    color: blue;
+    font-size: 18px;
+}
+
+#dropdown11:hover,
+#dropdown12:hover,
+#dropdown13:hover,
+#dropdown21:hover,
+#dropdown22:hover,
+#dropdown23:hover,
+#dropdown24:hover,
+#dropdown25:hover {
+    color: whitesmoke;
+    font-size: 18px;
+    margin: 0px;
+    float: none;
+    box-sizing: border-box;
+    position: relative;
+    display: list-item;
+    background-color: rgb(186, 223, 205);
+}
+
+/********************** Animation details **********************/
+
+.moving-images {
+    width: 87%;
+    height: 500px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+#animation-frame {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#animation-frame p {
+    border: solid steelblue 2px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    animation-name: animation1;
+    animation-duration: 30s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+/**********animation keyframes are computed using below formula:
+a:time for each image ti display: 3 seconds
+b:time for fading/transition: 2 seconds
+t: animation duration: 30 seconds 
+keyframe percentile1: 0%
+keyframe percentile2: a/t * 100%
+keyframe percentile3: (a + b) / t * 100% = 1/n * 100%
+keyframe percentile4: 100% - (b/t * 100%)
+keyframe percentile5: 100%
+**************************/
+
+@keyframes animation1 {
+    0% {
+        background-image: url('Images/Animation/ani1.jpg');
+
+    }
+
+    30% {
+        background-image: url('Images/Animation/ani2.png');
+
+    }
+
+    66.66% {
+        background-image: url('Images/Animation/ani3.jpg');
+
+    }
+
+    85% {
+        background-image: url('Images/Animation/ani4.jpg');
+
+    }
+
+    100% {
+        background-image: url('Images/Animation/ani5.jpg');
+
+    }
+}
+
+/**********************End of Animation **********************/
+
+#Covid-Care,
+#Diabetes-Care {
+    margin: 5px;
+    padding: 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+.covid-products,
+.diabetes-products {
+    position: relative;
+    border-radius: 10px;
+    margin: 15px;
+    width: 300px;
+    height: 280px;
+    border: 2px;
+    display: inline-block;
+    background-color: gainsboro;
+    overflow-y: hidden;
+    box-shadow: 5px 5px 10px rgb(111, 110, 111);
+}
+
+/***************When hovered on each product, slightly increase the width and height of it.***********/
+.covid-products:hover,
+.diabetes-products:hover {
+    position: relative;
+    border-radius: 10px;
+    margin: 5px;
+    width: 320px;
+    height: 300px;
+    border: 2px;
+    display: inline-block;
+    background-color: rgb(220, 223, 223);
+}
+
+/****************************************************************************************************/
+
+.covid-products h4,
+.diabetes-products h4 {
+    margin: 0px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/***************When hovered on each product, slightly increase the width and height of it.***********/
+.covid-products:hover h4,
+.diabetes-products:hover h4 {
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: large;
+}
+
+/****************************************************************************************************/
+
+.covid-products img,
+.diabetes-products img {
+    border-radius: 10px;
+    width: 280px;
+    height: 150px;
+    top: 0%;
+    margin: 5px;
+    padding: 5px;
+}
+
+/***************When hovered on each product, slightly increase the width and height of it.***********/
+.covid-products img:hover,
+.diabetes-products img:hover {
+    border-radius: 10px;
+    width: 285px;
+    height: 150px;
+    top: 0%;
+    margin: 5px;
+    padding-left: 10px;
+}
+
+/****************************************************************************************************/
+.overlay {
+    color: rgb(14, 89, 143);
+    margin: 0px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.overlay button {
+    width: 275px;
+    border: 2px solid blue;
+    border-radius: 7px;
+    margin: 5px;
+    margin-top: 0px;
+    color: rgb(199, 115, 51);
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(195, 196, 206);
+}
+
+/********************** When clicked on the button, the background color should change to rgb(250, 234, 230) and the border should change to rgb(0, 255, 76).**********************/
+
+.overlay button:active {
+    background-color: rgb(250, 234, 230);
+    border: 2px solid rgb(0, 255, 76);
+}
+
+/****************************************************************************************************/
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    position: relative;
+    bottom: 0%;
+    text-align: center;
+    width: 100%;
+}

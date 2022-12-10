@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Iframe</title>
+    <link rel="stylesheet" href="labtest.css">
+</head>
+
+<body>
+    <section id="labpagecontent">
+        <form>
+            <section id="section1">
+                <aside>
+                    <img src="Images/Lab-Test/lab-test.jpg" alt="alt img">
+                </aside>
+                <div class="labtest-fields">
+                    <label for="contact-details">
+                        <h3>1. Your contact details</h2>
+                    </label>
+                    <input type="text" title="fullname" placeholder="Full Name" required>
+                    <input type="text" title="patientId" placeholder="Patient Id if exists"><br><br>
+                    <input type="number" title="contactNumber" min="6000000000" max="9999999999"
+                        placeholder="Contact Number" required>
+                    <input type="email" title="emailId" placeholder="Email id" required><br><br>
+                    <label for="address">
+                        <h3>2. Address</h2>
+                    </label>
+                    <input type="text" title="H-No" placeholder="H-No" required>
+                    <input type="text" title="Street" placeholder="Street" required><br><br>
+                    <input type="text" title="Area" placeholder="Area" required> <br><br>
+                    <p>District</p>
+                    <select name="District" id="district-name" required>
+                        <option value="">Choose</option>
+                        <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                        <option value="Kollam">Kollam</option>
+                        <option value="Kochi">Kochi</option>
+                        <option value="Kannur">Kannur</option>
+                        <option value="Kozhikode">Kozhikode</option>
+                        <option value="Kasargod">Kasargod</option>
+                    </select><br><br>
+                </div>
+                <div class="labtest-fields">
+                    <h3>3. Choose the test type</h3>
+                    <h3>Check atleast one box without fail</h3>
+                    <input type="checkbox" id="c1" name="option1" value="CBC">
+                    <label for="c1">CBC</label>
+                    <br>
+                    <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                    <label for="c2">Complete Urine</label>
+                    <br>
+                    <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                    <label for="c3">Lipid Profile</label>
+                    <br>
+                    <input type="checkbox" id="c4" name="option4" value="Thyroid Stimulating Hormone(TSH)">
+                    <label for="c4">Thyroid Stimulating Hormone(TSH)</label>
+                    <br>
+                    <input type="checkbox" id="c5" name="option5" value="Glucose Test">
+                    <label for="c5">Glucose Test</label>
+                </div>
+                <div class="labtest-fields">
+                    <h3>4. Do you want a hard copy of the report also?</h3>
+                    <input type="radio" id="c5" name="option" value="True" required>
+                    <label for="c5">Yes</label>
+                    <br>
+                    <input type="radio" id="c6" name="option" value="False">
+                    <label for="c6">No</label>
+                </div>
+                <div class="labtest-fields">
+                    <h3>5. Select Your Comfortable Date and Time</h3>
+                    <input type="datetime-local" value="datetime-local" required>
+                </div>
+                <br>
+                <br>
+            </section>
+            <section id="section2">
+                <div class="buttns">
+                    <button input type="reset">Reset</button>
+                    <button input type="submit">Submit</button>
+                </div>
+            </section>
+        </form>
+    </section>
+</body>
+
+</html>
